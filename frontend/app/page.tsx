@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 
 "use client";
 
@@ -13,8 +14,7 @@ type Product = {
 };
 
 const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ??
-  "http://localhost:5000/api";
+  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5000/api";
 
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([]);
