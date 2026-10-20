@@ -48,5 +48,4 @@ next-env.d.ts
 /.agents*
 /.claude*
 /.windsurf*
-/generated*
 /prisma*
