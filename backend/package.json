@@ -2,11 +2,12 @@
   "name": "orderflow-backend",
   "version": "1.0.0",
   "private": true,
-  "main": "dist/server.js",
+  "main": "dist/src/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "prebuild": "prisma generate --config prisma7.config.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/src/server.js"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.10.1",
